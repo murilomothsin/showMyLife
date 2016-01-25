@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title Show my life
+  body
+  #nav
+    - if true
+        a href="/logout" logout
+    - else
+        a href="/login" login
+  br
+    == yield
